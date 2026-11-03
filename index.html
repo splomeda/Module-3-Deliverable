@@ -27,7 +27,7 @@
       </section>
       <form action="" method="get">
         <fieldset>
-          <legend>F3 · Contact information</legend>
+          <legend>Personal information</legend>
           <p class="help">
             Replace or extend this group based on your justified field
             inventory.
@@ -46,21 +46,98 @@
               required
             />
           </div>
+          <div class="field">
+            <label for="address">Street Address</label>
+            <input id="address" name="address" type="text" />
+          </div>
+          <div class="field">
+            <label for="city-state">City</label>
+            <input id="city-state" name="city-state" type="text" />
+          </div>
+          <div class="field">
+            <label for="state">State</label>
+            <select name="state" id="state">
+              <option value="">--Choose your state--</option>
+              <option value="AZ">AZ - Arizona</option>
+              <option value="CA">CA - California</option>
+              <option value="NM">NM - New Mexico</option>
+              <option value="OR">OR - Oregon</option>
+              <option value="TX">TX - Texas</option>
+              <option value="WA">WA - Washington</option>
+            </select>
+          </div>
         </fieldset>
         <fieldset>
-          <legend>F3 · Request choices</legend>
-          <p class="help">
-            Use an appropriate radio, checkbox, or select structure for the
-            task.
-          </p>
+          <div class="field">
+            <label for="telephone">Telephone No.</label>
+            <input id="telephone" name="telephone" type="text" />
+          </div>
+          <div class="phone-type">
+            <label for="homephone">Home</label>
+            <input
+              type="radio"
+              id="homephone"
+              name="phone"
+              value="Home"
+              checked
+            />
+            <label for="mobilephone">Mobile</label>
+            <input type="radio" id="mobilephone" name="phone" value="Mobile" />
+            <label for="workphone">Work</label>
+            <input type="radio" id="workphone" name="phone" value="Work" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <p>Have you ever applied to this company before?</p>
+            <label for="appliedFor">Yes</label>
+            <input
+              type="radio"
+              id="appliedFor"
+              name="applied"
+              value="yes"
+              checked
+            />
+            <label for="appliedFor">No</label>
+            <input type="radio" id="appliedFor" name="applied" value="no" />
+          </div>
+          <div>
+            <p>Have you ever worked for this company before?</p>
+            <label for="workedFor">Yes</label>
+            <input
+              type="radio"
+              id="workedFor"
+              name="worked"
+              value="yes"
+              checked
+            />
+            <label for="workedFor">No</label>
+            <input type="radio" id="workedFor" name="worked" value="no" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>How may we contact you?</legend>
           <label class="choice">
-            <input type="radio" name="request_type" value="option-a" /> Replace
-            with option A</label
+            <input
+              type="checkbox"
+              name="request_type"
+              value="contact-phone"
+            />Call</label
           >
           <label class="choice"
-            ><input type="radio" name="request_type" value="option-b" /> Replace
-            with option B</label
+            ><input
+              type="checkbox"
+              name="request_type"
+              value="contact-text"
+            />Text</label
           >
+          <label class="choice">
+            <input
+              type="checkbox"
+              name="request_type"
+              value="contact-email"
+            />Email
+          </label>
         </fieldset>
         <div class="field">
           <label for="details">Request details</label>

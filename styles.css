@@ -90,7 +90,7 @@ textarea {
   display: flex;
   gap: 0.65rem;
   align-items: flex-start;
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
 }
 .choice input {
   inline-size: 1.25rem;
