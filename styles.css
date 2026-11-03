@@ -1,4 +1,6 @@
 :root {
+  --font-body: "Montserrat", sans-serif;
+  --font-display: "Bangers", system-ui;
   --color-text: #000;
   --color-surface: #efd6ac;
   --color-action: #183a37;
@@ -21,8 +23,15 @@ body {
   margin: 0;
   color: var(--color-text);
   background: var(--color-surface);
-  font-family: Arial, sans-serif;
+  font-family: var(--font-body);
   line-height: 1.6;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  letter-spacing: 0.15rem;
 }
 .page-header {
   padding: clamp(2rem, 6vw, 5rem);
@@ -129,4 +138,8 @@ button:disabled {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+}
+.fictional-data {
+  width: 750px;
+  overflow-wrap: anywhere;
 }
