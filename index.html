@@ -28,10 +28,7 @@
       <form action="" method="get">
         <fieldset>
           <legend>Personal information</legend>
-          <p class="help">
-            Replace or extend this group based on your justified field
-            inventory.
-          </p>
+
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" autocomplete="name" />
@@ -51,8 +48,8 @@
             <input id="address" name="address" type="text" />
           </div>
           <div class="field">
-            <label for="city-state">City</label>
-            <input id="city-state" name="city-state" type="text" />
+            <label for="city">City</label>
+            <input id="city" name="city" type="text" />
           </div>
           <div class="field">
             <label for="state">State</label>
@@ -140,17 +137,26 @@
           </label>
         </fieldset>
         <div class="field">
-          <label for="details">Request details</label>
+          <label for="details">Cover Letter (optional)</label>
           <p class="help" id="details-help">
-            Explain the expected content and any limit before entry.
+            Enter your cover letter in the box below (max characters 1500).
           </p>
           <textarea
             id="details"
             name="details"
+            maxlength="1500"
             aria-describedby="details-help"
           ></textarea>
         </div>
-        <button type="submit">Replace with a specific action</button>
+        <div class="field">
+          <p>Sign and Date</p>
+          <label for="signature">Full Name</label>
+          <input type="text" name="fullname" id="signature" required />
+          <label for="signedDate">Date</label>
+          <input type="date" name="date" id="signedDate" />
+        </div>
+
+        <button type="submit">Submit</button>
       </form>
       <section id="states">
         <h2>F5 · State and Recovery Specimen</h2>
