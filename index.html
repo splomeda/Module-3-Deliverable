@@ -30,8 +30,14 @@
           <legend>Personal information</legend>
 
           <div class="field">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" />
+            <label for="name">Name (required)</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+            />
           </div>
           <div class="field">
             <label for="email">Email address (required)</label>
@@ -48,12 +54,12 @@
             <input id="address" name="address" type="text" />
           </div>
           <div class="field">
-            <label for="city">City</label>
-            <input id="city" name="city" type="text" />
+            <label for="city">City (required)</label>
+            <input id="city" name="city" type="text" required />
           </div>
           <div class="field">
-            <label for="state">State</label>
-            <select name="state" id="state">
+            <label for="state">State (required)</label>
+            <select name="state" id="state" required>
               <option value="">--Choose your state--</option>
               <option value="AZ">AZ - Arizona</option>
               <option value="CA">CA - California</option>
@@ -66,7 +72,7 @@
         </fieldset>
         <fieldset>
           <div class="field">
-            <label for="telephone">Telephone No.</label>
+            <label for="telephone">Phone number</label>
             <input id="telephone" name="telephone" type="text" />
           </div>
           <div class="phone-type">
