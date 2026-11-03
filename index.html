@@ -99,6 +99,7 @@
               id="appliedFor"
               name="applied"
               value="yes"
+              required
               checked
             />
             <label for="appliedFor">No</label>
@@ -112,6 +113,7 @@
               id="workedFor"
               name="worked"
               value="yes"
+              required
               checked
             />
             <label for="workedFor">No</label>
@@ -139,6 +141,7 @@
               type="checkbox"
               name="request_type"
               value="contact-email"
+              checked
             />Email
           </label>
         </fieldset>
@@ -159,7 +162,7 @@
           <label for="signature">Full Name</label>
           <input type="text" name="fullname" id="signature" required />
           <label for="signedDate">Date</label>
-          <input type="date" name="date" id="signedDate" />
+          <input type="date" name="date" id="signedDate" required />
         </div>
 
         <button type="submit">Submit</button>
