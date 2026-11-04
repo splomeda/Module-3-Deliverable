@@ -47,32 +47,35 @@
         </tr>
       </thead>
       <tbody>
-        <!--NAME-->
+        <!--NAME---------------------------------------------------------------->
         <tr>
           <td>Name</td>
           <td>Default</td>
           <td>Black border</td>
-          <td>input type="text"</td>
+          <td>input type <code>text</code></td>
         </tr>
         <tr>
           <td>Name</td>
           <td>Focus</td>
-          <td>2px orange border around field border</td>
-          <td>Screen reader reads off the label name for the field.</td>
+          <td>2px orange border</td>
+          <td>Screen reader announces the "Name" label.</td>
         </tr>
         <tr>
           <td>Name</td>
           <td>Required</td>
           <td>Text next to form label that says "Required"</td>
           <td>
-            'required' attribute signals to assistive tech that field cannot be
-            skipped.
+            <code>required</code> attribute signals to assistive tech that field
+            cannot be skipped.
           </td>
         </tr>
         <tr>
           <td>Name</td>
           <td>Valid</td>
-          <td>Black text, maxlength="100" allows up to 100 characters.</td>
+          <td>
+            Black text, <code>maxlength="100"</code> allows up to 100
+            characters.
+          </td>
           <td>
             User is allowed to continue if text is entered and kept under 101
             characters.
@@ -83,7 +86,7 @@
           <td>Invalid</td>
           <td>
             Orange border with tooltip that reads "Please fill out this field",
-            maxlength="100"
+            <code>maxlength="100"</code>
           </td>
           <td>
             Browser natively flags the element as invalid to assistive tech and
@@ -98,7 +101,8 @@
             mouse and no data can be entered into the field.
           </td>
           <td>
-            The 'disabled' attribute removes this field from keyboard/tab focus.
+            The <code>disabled</code> attribute removes this field from
+            keyboard/tab focus.
           </td>
         </tr>
         <tr>
@@ -107,30 +111,37 @@
           <td class="NEED-HELP">?</td>
           <td class="NEED-HELP">?</td>
         </tr>
-        <!--EMAIL-->
+        <!--EMAIL---------------------------------------------------------------->
         <tr class="matrix-row">
           <td>Email address</td>
           <td>Default</td>
-          <td>Black border</td>
-          <td>input type="email"</td>
+          <td>Black border with placeholder text "name@example.com"</td>
+          <td>input type <code>email</code></td>
         </tr>
         <tr class="matrix-row">
           <td>Email address</td>
           <td>Focus</td>
-          <td>Orange border</td>
-          <td>input type="email"</td>
+          <td>2px orange border</td>
+          <td>Screen reader announces the "Email address" label.</td>
         </tr>
         <tr class="matrix-row">
           <td>Email address</td>
           <td>Required</td>
           <td>Text next to form label that says "Required"</td>
-          <td>required attribute</td>
+          <td>
+            <code>required</code> attribute signals to assistive tech that field
+            is required.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>Email address</td>
           <td>Valid</td>
-          <td>Black text, maxlength="254"</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>Black text, <code>maxlength="254"</code> max 254 characters.</td>
+          <td>
+            If field contains the required email structure, i.e. alphanumeric
+            characters in front of an '@' symbol with alphanumeric characters
+            after then the user is allowed to continue.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>Email address</td>
@@ -138,15 +149,25 @@
           <td>
             Tooltip that reads "Please include an '@' in the email address"
             and/or "Please enter a part following '@' [nnn] is incomplete.";
-            maxlength="254"
+            <code>maxlength="254"</code>
           </td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Per Google Gemini, "the browser flags the element as invalid to
+            assistive tech, natively blocks form submission, and alerts the user
+            to a broken entry structure."
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>Email address</td>
           <td>Disabled</td>
-          <td class="NEED-HELP">N/A</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Text input field is grayed-out and unselectable with the keyboard or
+            mouse and no data can be entered into the field.
+          </td>
+          <td>
+            The <code>disabled</code> attribute removes this field from
+            keyboard/tab focus.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>Email address</td>
@@ -154,45 +175,60 @@
           <td class="NEED-HELP">?</td>
           <td class="NEED-HELP">?</td>
         </tr>
-        <!--STREET ADDRESS-->
+        <!--STREET ADDRESS---------------------------------------------------------------->
         <tr>
           <td>Street address</td>
           <td>Default</td>
           <td>Black border</td>
-          <td>input type="text"</td>
+          <td>input type <code>text</code></td>
         </tr>
         <tr>
           <td>Street address</td>
           <td>Focus</td>
-          <td>Orange border</td>
-          <td>input type="text"</td>
+          <td>2px orange border</td>
+          <td>Screen reader announces "Street address" label.</td>
         </tr>
         <tr>
           <td>Street address</td>
           <td>Required</td>
-          <td class="NEED-HELP">N/A</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>Text next to label that says 'required'.</td>
+          <td>
+            <code>required</code> attribute signals to assistive tech that field
+            is required.
+          </td>
         </tr>
         <tr>
           <td>Street address</td>
           <td>Valid</td>
-          <td>Black text, maxlength="100"</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>Black text, <code>maxlength="100"</code></td>
+          <td>
+            User is allowed to continue if text is entered and kept under 101
+            characters.
+          </td>
         </tr>
         <tr>
           <td>Street address</td>
           <td>Invalid</td>
           <td>
-            N/A - Any combination of characters can be entered up to a maximum
-            of 100 characters.
+            Any combination of characters can be entered up to a maximum of 100
+            characters.
           </td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Browser flags the element as invalid to assistive tech and pauses
+            form submission.
+          </td>
         </tr>
         <tr>
           <td>Street address</td>
           <td>Disabled</td>
-          <td class="NEED-HELP">N/A</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Text input field is grayed-out and unselectable with the keyboard or
+            mouse and no data can be entered into the field.
+          </td>
+          <td>
+            The <code>disabled</code> attribute removes this field from
+            keyboard/tab focus.
+          </td>
         </tr>
         <tr>
           <td>Street address</td>
@@ -200,45 +236,63 @@
           <td class="NEED-HELP">?</td>
           <td class="NEED-HELP">?</td>
         </tr>
-        <!--CITY-->
+        <!--CITY---------------------------------------------------------------->
         <tr class="matrix-row">
           <td>City</td>
           <td>Default</td>
           <td>Black border</td>
-          <td>input type="text"</td>
+          <td>input type <code>text</code></td>
         </tr>
         <tr class="matrix-row">
           <td>City</td>
           <td>Focus</td>
-          <td>Orange border</td>
-          <td>input type="text"</td>
+          <td>2px orange border</td>
+          <td>Screen reader announces the "City" label.</td>
         </tr>
         <tr class="matrix-row">
           <td>City</td>
           <td>Required</td>
           <td>Tooltip: "Please fill out this field"</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            <code>required</code> attribute signals to assistive tech that field
+            is required.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>City</td>
           <td>Valid</td>
-          <td>Black text, maxlength="100"</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Black text, <code>maxlength="100"</code> max characters allowed is
+            100.
+          </td>
+          <td>
+            User is allowed to continue if text is entered and kept under 101
+            characters.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>City</td>
           <td>Invalid</td>
           <td>
-            N/A - Any combination of characters can be entered up to a maximum
-            of 100 characters.
+            Any combination of characters can be entered up to a maximum of 100
+            characters.
           </td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Browser natively flags the element as invalid to assistive tech and
+            pauses form submission.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>City</td>
           <td>Disabled</td>
-          <td class="NEED-HELP">N/A</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Text input field is grayed-out and unselectable with the keyboard or
+            mouse and no data can be entered into the field.
+          </td>
+          <td>
+            The <code>disabled</code> attribute removes this field from
+            keyboard/tab focus.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>City</td>
@@ -246,18 +300,18 @@
           <td class="NEED-HELP">?</td>
           <td class="NEED-HELP">?</td>
         </tr>
-        <!--STATE-->
+        <!--STATE---------------------------------------------------------------->
         <tr>
           <td>State</td>
           <td>Default</td>
           <td>Black border</td>
-          <td>input type select</td>
+          <td>input type <code>select</code></td>
         </tr>
         <tr>
           <td>State</td>
           <td>Focus</td>
-          <td>Orange border</td>
-          <td>input type select</td>
+          <td>2px orange border</td>
+          <td>Screen reader announces the "State" label.</td>
         </tr>
         <tr>
           <td>State</td>
@@ -266,25 +320,39 @@
             Dropdown menu with selectable items; tooltip: "Please select an item
             on this list."
           </td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Browser block submission if the default value is still selected in
+            the dropdown menu <code>--Choose your state--</code>
+          </td>
         </tr>
         <tr>
           <td>State</td>
           <td>Valid</td>
           <td>Black text, can only select items listed.</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            If a valid option is selected from the dropdown menu the browser
+            allows the user to continue.
+          </td>
         </tr>
         <tr>
           <td>State</td>
           <td>Invalid</td>
           <td>Tooltip: "Please select an item on this list."</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Form submission is paused until a valid option is selected from the
+            dropdown menu.
+          </td>
         </tr>
         <tr>
           <td>State</td>
           <td>Disabled</td>
-          <td class="NEED-HELP">N/A</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Dropdown menu is grayed-out and unselectable by keyboard or mouse.
+          </td>
+          <td>
+            The <code>disabled</code> attribute removes this field from
+            keyboard/tab focus.
+          </td>
         </tr>
         <tr>
           <td>State</td>
@@ -292,44 +360,62 @@
           <td class="NEED-HELP">?</td>
           <td class="NEED-HELP">?</td>
         </tr>
-        <!--PHONE-->
+        <!--PHONE---------------------------------------------------------------->
         <tr class="matrix-row">
           <td>Phone</td>
           <td>Default</td>
           <td>Black border with placeholder text ("###-###-####").</td>
-          <td>input type "tel"</td>
+          <td>input type <code>tel</code></td>
         </tr>
         <tr class="matrix-row">
           <td>Phone</td>
           <td>Focus</td>
-          <td>Orange border</td>
-          <td>Screen reader reads the field's label.</td>
+          <td>2px orange border</td>
+          <td>Screen reader announces the "Phone number" label.</td>
         </tr>
         <tr class="matrix-row">
           <td>Phone</td>
           <td>Required</td>
           <td>Phone number is not required.</td>
-          <td>N/A</td>
+          <td>
+            Phone number is not required; there is no
+            <code>required</code> attribute to stop the form submission.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>Phone</td>
           <td>Valid</td>
           <td>
-            Black text, maxlength is 12 digits and must match dash pattern.
+            Black text, <code>maxlength</code> is 12 digits and must match dash
+            pattern.
           </td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            If the conditions of the pattern attribute are satisfied the form
+            allows the user to continue, however the field is not required and
+            can be skipped completely.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>Phone</td>
           <td>Invalid</td>
           <td>Tooltip: "Please match the requested format."</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Even though phone is not required (it can be skipped completely), if
+            an incorrect format is entered form submission is paused until
+            number matches the <code>pattern</code>.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>Phone</td>
           <td>Disabled</td>
-          <td>N/A</td>
-          <td class="NEED-HELP">N/A</td>
+          <td>
+            Text input field is grayed-out and unselectable with the keyboard or
+            mouse and no data can be entered into the field.
+          </td>
+          <td>
+            The <code>disabled</code> attribute removes this field from
+            keyboard/tab focus.
+          </td>
         </tr>
         <tr class="matrix-row">
           <td>Phone</td>
@@ -337,24 +423,27 @@
           <td class="NEED-HELP">?</td>
           <td class="NEED-HELP">?</td>
         </tr>
-        <!--APPLIED BEFORE-->
+        <!--APPLIED BEFORE---------------------------------------------------------------->
         <tr>
           <td>Have you ever applied to this company before?</td>
           <td>Default</td>
-          <td>Default selection is "Yes"</td>
-          <td>input type "radio"</td>
+          <td>Default selection is <code>Yes</code></td>
+          <td>input type <code>radio</code></td>
         </tr>
         <tr>
           <td>Have you ever applied to this company before?</td>
           <td>Focus</td>
-          <td>Orange bordered-circle around selection.</td>
-          <td>Screen reader reads the field's label.</td>
+          <td>2px orange bordered-circle around selection.</td>
+          <td>Screen reader announces the field's label.</td>
         </tr>
         <tr>
           <td>Have you ever applied to this company before?</td>
           <td>Required</td>
-          <td>Not necessarily required as default is "Yes".</td>
-          <td>N/A</td>
+          <td>Not necessarily required as default is <code>Yes</code>.</td>
+          <td>
+            Not required; default is <code>Yes</code> and form will continue
+            without any input from user.
+          </td>
         </tr>
         <tr>
           <td>Have you ever applied to this company before?</td>
@@ -375,16 +464,312 @@
           <td>Have you ever applied to this company before?</td>
           <td>Disabled</td>
           <td>
-            Adding the disable attribute makes the radio option grayed-out and
-            unselectable.
+            Adding the <code>disabled</code> attribute makes the radio option
+            grayed-out and unselectable.
           </td>
           <td>
-            The disabled attribute completely removes the radio group from the
-            keyboard tab sequence.
+            The <code>disabled</code> attribute completely removes the radio
+            group from the keyboard tab sequence.
           </td>
         </tr>
         <tr>
           <td>Have you ever applied to this company before?</td>
+          <td>Server-returned error</td>
+          <td class="NEED-HELP">?</td>
+          <td class="NEED-HELP">?</td>
+        </tr>
+        <!--WORKED BEFORE---------------------------------------------------------------->
+        <tr class="matrix-row">
+          <td>Have you ever worked for this company before?</td>
+          <td>Default</td>
+          <td>Default selection is <code>Yes</code></td>
+          <td>input type <code>radio</code></td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Have you ever worked for this company before?</td>
+          <td>Focus</td>
+          <td>2px orange bordered-circle around selection.</td>
+          <td>Screen reader announces the field's label.</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Have you ever worked for this company before?</td>
+          <td>Required</td>
+          <td>Not necessarily required as default is <code>Yes</code>.</td>
+          <td>
+            Not required; default is <code>Yes</code> and form will continue
+            without any input from user.
+          </td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Have you ever worked for this company before?</td>
+          <td>Valid</td>
+          <td>Blue dot/bullet point.</td>
+          <td>Valid radio value is continuously active.</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Have you ever worked for this company before?</td>
+          <td>Invalid</td>
+          <td>It is not possible for this section to be invalid.</td>
+          <td>
+            It is not possible for this section to be invalid and an invalid
+            state cannot be triggered by the user.
+          </td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Have you ever worked for this company before?</td>
+          <td>Disabled</td>
+          <td>
+            Adding the <code>disabled</code> attribute makes the radio option
+            grayed-out and unselectable.
+          </td>
+          <td>
+            The <code>disabled</code> attribute completely removes the radio
+            group from the keyboard tab sequence.
+          </td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Have you ever worked for this company before?</td>
+          <td>Server-returned error</td>
+          <td class="NEED-HELP">?</td>
+          <td class="NEED-HELP">?</td>
+        </tr>
+        <!--CONTACT PREFERENCE---------------------------------------------------------------->
+        <tr>
+          <td>How may we contact you?</td>
+          <td>Default</td>
+          <td>Default selection is <code>Email</code></td>
+          <td>input type <code>checkbox</code></td>
+        </tr>
+        <tr>
+          <td>How may we contact you?</td>
+          <td>Focus</td>
+          <td>2px orange border around checkbox.</td>
+          <td>Screen reader announces the field's label.</td>
+        </tr>
+        <tr>
+          <td>How may we contact you?</td>
+          <td>Required</td>
+          <td>Not necessarily required as default is <code>Email</code>.</td>
+          <td>
+            Not required; default is <code>Email</code> and form will continue
+            without any input from user.
+          </td>
+        </tr>
+        <tr>
+          <td>How may we contact you?</td>
+          <td>Valid</td>
+          <td>Checkbox is filled blue with white checkmark.</td>
+          <td>
+            Any checkmark, or the absence of, is valid and form will continue.
+          </td>
+        </tr>
+        <tr>
+          <td>How may we contact you?</td>
+          <td>Invalid</td>
+          <td>It is not possible for this section to be invalid.</td>
+          <td>
+            It is not possible for this section to be invalid and an invalid
+            state cannot be triggered by the user.
+          </td>
+        </tr>
+        <tr>
+          <td>How may we contact you?</td>
+          <td>Disabled</td>
+          <td>
+            Adding the <code>disabled</code> attribute makes the checkbox option
+            grayed-out and unselectable.
+          </td>
+          <td>
+            The <code>disabled</code> attribute completely removes the checkbox
+            from the keyboard tab sequence.
+          </td>
+        </tr>
+        <tr>
+          <td>How may we contact you?</td>
+          <td>Server-returned error</td>
+          <td class="NEED-HELP">?</td>
+          <td class="NEED-HELP">?</td>
+        </tr>
+        <!--COVER LETTER---------------------------------------------------------------->
+        <tr class="matrix-row">
+          <td>Cover Letter</td>
+          <td>Default</td>
+          <td>Black border</td>
+          <td>input type <code>text</code></td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Cover Letter</td>
+          <td>Focus</td>
+          <td>2px orange border around checkbox.</td>
+          <td>Screen reader announces the field's label.</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Cover Letter</td>
+          <td>Required</td>
+          <td>Not required, completely optional.</td>
+          <td>
+            Not required and form will continue without any input from user.
+          </td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Cover Letter</td>
+          <td>Valid</td>
+          <td>
+            Textbox accepts up to 1500 alphanumeric characters;
+            <code>maxlength="1500"</code>
+          </td>
+          <td>
+            Screen reader announces field label; no input required for form to
+            continue.
+          </td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Cover Letter</td>
+          <td>Invalid</td>
+          <td>It is not possible for this section to be invalid.</td>
+          <td>
+            It is not possible for this section to be invalid and an invalid
+            state cannot be triggered by the user.
+          </td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Cover Letter</td>
+          <td>Disabled</td>
+          <td>
+            Adding the <code>disabled</code> attribute makes the textarea
+            grayed-out and unselectable.
+          </td>
+          <td>
+            The <code>disabled</code> attribute completely removes the textarea
+            from the keyboard tab sequence.
+          </td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Cover Letter</td>
+          <td>Server-returned error</td>
+          <td class="NEED-HELP">?</td>
+          <td class="NEED-HELP">?</td>
+        </tr>
+        <!--SIGNATURE---------------------------------------------------------------->
+        <tr>
+          <td>Full Name (Signature)</td>
+          <td>Default</td>
+          <td>Black border</td>
+          <td>input type <code>text</code></td>
+        </tr>
+        <tr>
+          <td>Full Name (Signature)</td>
+          <td>Focus</td>
+          <td>2px orange border.</td>
+          <td>Screen reader announces the field's label.</td>
+        </tr>
+        <tr>
+          <td>Full Name (Signature)</td>
+          <td>Required</td>
+          <td>Text next to form label that says "Required".</td>
+          <td>
+            Orange border with tooltip that reads "Please fill out this field",
+            <code>maxlength="100"</code>. <code>required</code> attribute
+            signals to assistive tech that field cannot be skipped.
+          </td>
+        </tr>
+        <tr>
+          <td>Full Name (Signature)</td>
+          <td>Valid</td>
+          <td>
+            Black text, <code>maxlength="100"</code> allows up to 100
+            characters.
+          </td>
+          <td>Screen reader announces field label.</td>
+        </tr>
+        <tr>
+          <td>Full Name (Signature)</td>
+          <td>Invalid</td>
+          <td>
+            It is not possible for this section to be invalid and an invalid
+            state cannot be triggered by the user and it only needs one
+            alphanumeric character or digit to be considered valid.
+          </td>
+          <td>
+            It is not possible for this section to be invalid and an invalid
+            state cannot be triggered by the user and it only needs one
+            alphanumeric character or digit to be considered valid.
+          </td>
+        </tr>
+        <tr>
+          <td>Full Name (Signature)</td>
+          <td>Disabled</td>
+          <td>
+            Adding the <code>disabled</code> attribute makes the textarea
+            grayed-out and unselectable.
+          </td>
+          <td>
+            The <code>disabled</code> attribute completely removes the textarea
+            from the keyboard tab sequence.
+          </td>
+        </tr>
+        <tr>
+          <td>Full Name (Signature)</td>
+          <td>Server-returned error</td>
+          <td class="NEED-HELP">?</td>
+          <td class="NEED-HELP">?</td>
+        </tr>
+        <!--DATE---------------------------------------------------------------->
+        <tr class="matrix-row">
+          <td>Date</td>
+          <td>Default</td>
+          <td>Black border</td>
+          <td>input type <code>date</code></td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Date</td>
+          <td>Focus</td>
+          <td>2px orange border.</td>
+          <td>Screen reader announces the field's label.</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Date</td>
+          <td>Required</td>
+          <td>
+            Date must be selected or entered in the
+            <code>MM/DD/YYYY</code> format and browser blocks submission if left
+            empty.
+          </td>
+          <td>Tooltip reads: "Please fill out this field."</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Date</td>
+          <td>Valid</td>
+          <td>
+            Date field accepts 8 digits not including '/'.<br />
+            <code>max="9999-12-31"</code>
+          </td>
+          <td>Screen reader announces field label.</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Date</td>
+          <td>Invalid</td>
+          <td>It is not possible for this section to be invalid.</td>
+          <td>
+            As long as the 8 digits are entered, date cannot be invalid. If less
+            than 8 digits, a tooltip displays "Please enter a valid value.The
+            field is incomplete or has an invalid date."
+          </td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Date</td>
+          <td>Disabled</td>
+          <td>
+            Adding the <code>disabled</code> attribute makes the date field
+            grayed-out and unselectable.
+          </td>
+          <td>
+            The <code>disabled</code> attribute completely removes the date
+            field from the keyboard tab sequence.
+          </td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Date</td>
           <td>Server-returned error</td>
           <td class="NEED-HELP">?</td>
           <td class="NEED-HELP">?</td>

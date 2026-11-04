@@ -31,7 +31,7 @@
           <em>EQUAL OPPORTUNITY EMPLOYER</em>
         </p>
       </section>
-      <form action="." method="get">
+      <form action="" method="get">
         <fieldset>
           <legend>Personal information</legend>
 
@@ -44,7 +44,6 @@
               autocomplete="name"
               maxlength="100"
               required
-              disabled
             />
           </div>
           <div class="field">
@@ -116,7 +115,6 @@
               id="appliedFor1"
               name="applied"
               value="yes"
-              required
               checked
             />
             <label for="appliedFor2">No</label>
@@ -130,7 +128,6 @@
               id="workedFor1"
               name="worked"
               value="yes"
-              required
               checked
             />
             <label for="workedFor2">No</label>
@@ -176,7 +173,7 @@
         </div>
         <div class="field">
           <p>Sign and Date</p>
-          <label for="signature">Full Name</label>
+          <label for="signature">Full Name (required)</label>
           <input
             type="text"
             name="fullname"
@@ -185,7 +182,13 @@
             required
           />
           <label for="signedDate">Date</label>
-          <input type="date" name="date" id="signedDate" required />
+          <input
+            type="date"
+            name="date"
+            id="signedDate"
+            max="9999-12-31"
+            required
+          />
         </div>
 
         <button type="submit">Submit</button>
@@ -221,6 +224,7 @@
         <h2>F2 and F6 · Planning and Evidence</h2>
         <p><a href="field-inventory-template.html">Field Inventory</a></p>
         <p><a href="fictional-test-data.html">Fictional Test Data</a></p>
+        <p><a href="state-matrix.html">State Matrix</a></p>
         <p>
           Link your field inventory, state matrix, fictional test-data list,
           completed test record, and AI disclosure.
