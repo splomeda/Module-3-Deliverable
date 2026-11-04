@@ -66,7 +66,7 @@ form {
 }
 fieldset {
   padding: 1rem;
-  border: 1px solid #d0d0d0;
+  border: 1px solid var(--color-action);
   border-radius: var(--radius);
 }
 legend,
@@ -142,4 +142,11 @@ button:disabled {
 .fictional-data {
   width: 750px;
   overflow-wrap: anywhere;
+}
+.matrix-row td {
+  background-color: #f2f2f2;
+}
+.NEED-HELP {
+  border: 3px solid red;
+  background-color: rgb(249, 191, 191) !important;
 }

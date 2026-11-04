@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>State Matrix | splomedahl</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        max-width: 80rem;
+        margin: auto;
+        padding: 1rem;
+        color: #191919;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        padding: 0.6rem;
+        border: 1px solid #999;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #ccc;
+      }
+      td {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>F5 · State Matrix</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Form Control (Field)</th>
+          <th>State</th>
+          <th>Visual Communication</th>
+          <th>Accessibility Communication</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--NAME-->
+        <tr>
+          <td>Name</td>
+          <td>Default</td>
+          <td>Orange border</td>
+          <td>input type="text"</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Focus</td>
+          <td>2px orange border around field border</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Required</td>
+          <td>Text next to form label that says "Required"</td>
+          <td>required attribute</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Valid</td>
+          <td>Black text, maxlength="100"</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Invalid</td>
+          <td>
+            Orange border with tooltip that reads "Please fill out this field",
+            maxlength="100"
+          </td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Disabled</td>
+          <td class="NEED-HELP">N/A</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Server-returned error</td>
+          <td class="NEED-HELP">?</td>
+          <td class="NEED-HELP">?</td>
+        </tr>
+        <!--EMAIL-->
+        <tr class="matrix-row">
+          <td>Email address</td>
+          <td>Default</td>
+          <td>Black border</td>
+          <td>input type="email"</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Email address</td>
+          <td>Focus</td>
+          <td>Orange border</td>
+          <td>input type="email"</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Email address</td>
+          <td>Required</td>
+          <td>Text next to form label that says "Required"</td>
+          <td>required attribute</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Email address</td>
+          <td>Valid</td>
+          <td>Black text, maxlength="254"</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Email address</td>
+          <td>Invalid</td>
+          <td>
+            Tooltip that reads "Please include an '@' in the email address"
+            and/or "Please enter a part following '@' [nnn] is incomplete.";
+            maxlength="254"
+          </td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Email address</td>
+          <td>Disabled</td>
+          <td class="NEED-HELP">N/A</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>Email address</td>
+          <td>Server-returned error</td>
+          <td class="NEED-HELP">?</td>
+          <td class="NEED-HELP">?</td>
+        </tr>
+        <!--STREET ADDRESS-->
+        <tr>
+          <td>Street address</td>
+          <td>Default</td>
+          <td>Black border</td>
+          <td>input type="text"</td>
+        </tr>
+        <tr>
+          <td>Street address</td>
+          <td>Focus</td>
+          <td>Orange border</td>
+          <td>input type="text"</td>
+        </tr>
+        <tr>
+          <td>Street address</td>
+          <td>Required</td>
+          <td class="NEED-HELP">N/A</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>Street address</td>
+          <td>Valid</td>
+          <td>Black text, maxlength="100"</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>Street address</td>
+          <td>Invalid</td>
+          <td>
+            N/A - Any combination of characters can be entered up to a maximum
+            of 100 characters.
+          </td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>Street address</td>
+          <td>Disabled</td>
+          <td class="NEED-HELP">N/A</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>Street address</td>
+          <td>Server-returned error</td>
+          <td class="NEED-HELP">?</td>
+          <td class="NEED-HELP">?</td>
+        </tr>
+        <!--CITY-->
+        <tr class="matrix-row">
+          <td>City</td>
+          <td>Default</td>
+          <td>Black border</td>
+          <td>input type="text"</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>City</td>
+          <td>Focus</td>
+          <td>Orange border</td>
+          <td>input type="text"</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>City</td>
+          <td>Required</td>
+          <td>Tooltip: "Please fill out this field"</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>City</td>
+          <td>Valid</td>
+          <td>Black text, maxlength="100"</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>City</td>
+          <td>Invalid</td>
+          <td>
+            N/A - Any combination of characters can be entered up to a maximum
+            of 100 characters.
+          </td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>City</td>
+          <td>Disabled</td>
+          <td class="NEED-HELP">N/A</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr class="matrix-row">
+          <td>City</td>
+          <td>Server-returned error</td>
+          <td class="NEED-HELP">?</td>
+          <td class="NEED-HELP">?</td>
+        </tr>
+        <!--STATE-->
+        <tr>
+          <td>State</td>
+          <td>Default</td>
+          <td>Black border</td>
+          <td>input type select</td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>Focus</td>
+          <td>Orange border</td>
+          <td>input type select</td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>Required</td>
+          <td>
+            Dropdown menu with selectable items; tooltip: "Please select an item
+            on this list."
+          </td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>Valid</td>
+          <td>Black text, can only select items listed.</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>Invalid</td>
+          <td>Tooltip: "Please select an item on this list."</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>Disabled</td>
+          <td class="NEED-HELP">N/A</td>
+          <td class="NEED-HELP">N/A</td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>Server-returned error</td>
+          <td class="NEED-HELP">?</td>
+          <td class="NEED-HELP">?</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
