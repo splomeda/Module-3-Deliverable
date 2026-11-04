@@ -42,6 +42,7 @@
               name="name"
               type="text"
               autocomplete="name"
+              maxlength="100"
               required
             />
           </div>
@@ -52,16 +53,17 @@
               name="email"
               type="email"
               autocomplete="email"
+              maxlength="254"
               required
             />
           </div>
           <div class="field">
-            <label for="address">Street Address</label>
-            <input id="address" name="address" type="text" />
+            <label for="address">Street address</label>
+            <input id="address" name="address" type="text" maxlength="100" />
           </div>
           <div class="field">
             <label for="city">City (required)</label>
-            <input id="city" name="city" type="text" required />
+            <input id="city" name="city" type="text" required maxlength="100" />
           </div>
           <div class="field">
             <label for="state">State (required)</label>
@@ -79,7 +81,7 @@
         <fieldset>
           <div class="field">
             <label for="telephone">Phone number</label>
-            <input id="telephone" name="telephone" type="text" />
+            <input id="telephone" name="telephone" type="text" maxlength="10" />
           </div>
           <div class="phone-type">
             <label for="homephone">Home</label>
@@ -166,7 +168,13 @@
         <div class="field">
           <p>Sign and Date</p>
           <label for="signature">Full Name</label>
-          <input type="text" name="fullname" id="signature" required />
+          <input
+            type="text"
+            name="fullname"
+            id="signature"
+            maxlength="100"
+            required
+          />
           <label for="signedDate">Date</label>
           <input type="date" name="date" id="signedDate" required />
         </div>
