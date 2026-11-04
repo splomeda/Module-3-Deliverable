@@ -44,6 +44,7 @@
               autocomplete="name"
               maxlength="100"
               required
+              disabled
             />
           </div>
           <div class="field">
@@ -82,7 +83,14 @@
         <fieldset>
           <div class="field">
             <label for="telephone">Phone number</label>
-            <input id="telephone" name="telephone" type="text" maxlength="10" />
+            <input
+              id="telephone"
+              name="telephone"
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              maxlength="12"
+              placeholder="###-###-####"
+            />
           </div>
           <div class="phone-type">
             <label for="homephone">Home</label>
