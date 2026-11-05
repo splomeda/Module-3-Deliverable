@@ -203,6 +203,7 @@
           static server-returned error. Keep this section separate from the
           primary blank form when necessary to avoid misleading users.
         </p>
+        <!--
         <div class="error-summary">
           <h3>There is a problem with the fictional submission</h3>
           <p><a href="#error-example">Email address needs attention</a></p>
@@ -221,13 +222,109 @@
             name@example.com.
           </p>
         </div>
+        
         <button type="button" disabled>Disabled example</button>
+        -->
+        <div class="error-system-wrap">
+          <h2>Default / Idle State</h2>
+          <div>
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              placeholder="name@example.com"
+            />
+          </div>
+          <h2 class="h2-error-section">Active Focus State</h2>
+          <div>
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              class="focus-state"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              placeholder="name@example.com"
+            />
+          </div>
+          <h2 class="h2-error-section">Required State Marker</h2>
+          <div>
+            <label for="email"
+              >Email address
+              <span style="color: red"> -> (required) <- </span></label
+            >
+            <input
+              id="email"
+              class="required-state"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+          <h2 class="h2-error-section">Valid State</h2>
+          <div>
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              class="valid-state"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              placeholder="name@example.com"
+            />
+          </div>
+          <h2 class="h2-error-section">Disabled State</h2>
+          <div>
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              placeholder="name@example.com"
+              disabled
+            />
+          </div>
+          <h2 class="h2-error-section">Static Server-Returned Error</h2>
+          <div>
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              class="required-state"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              placeholder="name@example.com"
+              required
+            />
+            <p>
+              <span style="color: red"
+                >Please enter a valid email address.</span
+              >
+            </p>
+          </div>
+          <h2 class="h2-error-section">Button Active</h2>
+          <button type="button">Submit</button>
+          <h2 class="h2-error-section">Button Disabled</h2>
+          <button type="button" disabled>Submit</button>
+        </div>
       </section>
       <section id="documentation">
         <h2>F2 and F6 · Planning and Evidence</h2>
         <p><a href="field-inventory-template.html">Field Inventory</a></p>
         <p><a href="fictional-test-data.html">Fictional Test Data</a></p>
         <p><a href="state-matrix.html">State Matrix</a></p>
+        <p><a href="README.md">AI Disclosure</a></p>
         <p>
           Link your field inventory, state matrix, fictional test-data list,
           completed test record, and AI disclosure.

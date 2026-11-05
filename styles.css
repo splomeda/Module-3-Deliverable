@@ -174,6 +174,64 @@ button:disabled {
   border: 3px solid red;
   background-color: rgb(249, 191, 191) !important;
 }
+/*--ERROR SYSTEM--*/
+.error-system-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: var(--space-xl);
+  background-color: var(--color-bg-light);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+}
+.focus-state {
+  border: var(--border-thick);
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+.required-state {
+  border: 3px solid red !important;
+}
+.valid-state {
+  border: 3px solid green !important;
+}
+.h2-error-section {
+  margin-top: 25px;
+}
+/*--Code supplied by Google Gemini------*/
+input[type="email"]:user-invalid {
+  border: 3px solid red;
+  background-color: #fef2f2;
+}
+input[type="text"]:user-invalid {
+  border: 3px solid red;
+  background-color: #fef2f2;
+}
+input[type="date"]:user-invalid {
+  border: 3px solid red;
+  background-color: #fef2f2;
+}
+input[type="email"]:disabled {
+  border: 3px solid gray;
+}
+input[type="text"]:disabled {
+  border: 3px solid gray;
+}
+input[type="date"]:disabled {
+  border: 3px solid gray;
+}
+/*--End imported code-------------------*/
+input[type="email"]:user-valid {
+  border: 3px solid green;
+}
+input[type="text"]:user-valid {
+  border: 3px solid green;
+}
+input[type="date"]:user-valid {
+  border: 3px solid green;
+}
+
 @media (min-width: 48rem) {
   .paired-fields {
     display: grid;
