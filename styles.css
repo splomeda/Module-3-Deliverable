@@ -132,13 +132,6 @@ button:disabled {
   opacity: 0.55;
   cursor: not-allowed;
 }
-@media (min-width: 48rem) {
-  .paired-fields {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-}
 .fictional-data {
   width: 750px;
   overflow-wrap: anywhere;
@@ -149,4 +142,11 @@ button:disabled {
 .NEED-HELP {
   border: 3px solid red;
   background-color: rgb(249, 191, 191) !important;
+}
+@media (min-width: 48rem) {
+  .paired-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }
