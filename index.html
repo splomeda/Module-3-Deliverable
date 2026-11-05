@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Inclusive Form Flow</title>
+    <title>splomedahl | Module 3 Deliverable</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +31,7 @@
           <em>EQUAL OPPORTUNITY EMPLOYER</em>
         </p>
       </section>
-      <form action="" method="get">
+      <form action="." method="get">
         <fieldset>
           <legend>Personal information</legend>
 
@@ -189,7 +189,8 @@
             type="date"
             name="date"
             id="signedDate"
-            max="9999-12-31"
+            min="2026-01-01"
+            max="2099-12-31"
             required
           />
         </div>
@@ -228,9 +229,9 @@
         <div class="error-system-wrap">
           <h2>Default / Idle State</h2>
           <div>
-            <label for="email">Email address</label>
+            <label for="email-default">Email address</label>
             <input
-              id="email"
+              id="email-default"
               name="email"
               type="email"
               autocomplete="email"
@@ -240,9 +241,9 @@
           </div>
           <h2 class="h2-error-section">Active Focus State</h2>
           <div>
-            <label for="email">Email address</label>
+            <label for="email-active">Email address</label>
             <input
-              id="email"
+              id="email-active"
               class="focus-state"
               name="email"
               type="email"
@@ -253,12 +254,11 @@
           </div>
           <h2 class="h2-error-section">Required State Marker</h2>
           <div>
-            <label for="email"
-              >Email address
-              <span style="color: red"> -> (required) <- </span></label
+            <label for="email-required"
+              >Email address <span style="color: red">(required)*</span></label
             >
             <input
-              id="email"
+              id="email-required"
               class="required-state"
               name="email"
               type="email"
@@ -270,9 +270,9 @@
           </div>
           <h2 class="h2-error-section">Valid State</h2>
           <div>
-            <label for="email">Email address</label>
+            <label for="email-valid">Email address</label>
             <input
-              id="email"
+              id="email-valid"
               class="valid-state"
               name="email"
               type="email"
@@ -283,9 +283,9 @@
           </div>
           <h2 class="h2-error-section">Disabled State</h2>
           <div>
-            <label for="email">Email address</label>
+            <label for="email-disabled">Email address</label>
             <input
-              id="email"
+              id="email-disabled"
               name="email"
               type="email"
               autocomplete="email"
@@ -296,9 +296,9 @@
           </div>
           <h2 class="h2-error-section">Static Server-Returned Error</h2>
           <div>
-            <label for="email">Email address</label>
+            <label for="email-server-error">Email address</label>
             <input
-              id="email"
+              id="email-server-error"
               class="required-state"
               name="email"
               type="email"

@@ -204,6 +204,10 @@ input[type="email"]:user-invalid {
   border: 3px solid red;
   background-color: #fef2f2;
 }
+input[type="email"]:disabled {
+  border: 3px solid gray;
+}
+/*--End imported code-------------------*/
 input[type="text"]:user-invalid {
   border: 3px solid red;
   background-color: #fef2f2;
@@ -212,16 +216,12 @@ input[type="date"]:user-invalid {
   border: 3px solid red;
   background-color: #fef2f2;
 }
-input[type="email"]:disabled {
-  border: 3px solid gray;
-}
 input[type="text"]:disabled {
   border: 3px solid gray;
 }
 input[type="date"]:disabled {
   border: 3px solid gray;
 }
-/*--End imported code-------------------*/
 input[type="email"]:user-valid {
   border: 3px solid green;
 }
@@ -230,6 +230,12 @@ input[type="text"]:user-valid {
 }
 input[type="date"]:user-valid {
   border: 3px solid green;
+}
+.test-record-wrap {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px;
 }
 
 @media (min-width: 48rem) {
