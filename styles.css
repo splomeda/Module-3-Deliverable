@@ -256,7 +256,6 @@ input[type="date"]:user-valid {
 td {
   padding: 10px;
   border: var(--border-thin);
-  min-width: 200px;
 }
 .test-record-table th {
   width: 33%;
