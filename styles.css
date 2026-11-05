@@ -164,7 +164,7 @@ button:disabled {
   cursor: not-allowed;
 }
 .fictional-data {
-  width: 750px;
+  width: 100%;
   overflow-wrap: anywhere;
 }
 .matrix-row td {
@@ -244,20 +244,27 @@ input[type="date"]:user-valid {
 }
 .test-record-images {
   display: block;
-  width: 100%;
-  max-width: 500px;
+  max-width: 100%;
   border: var(--border-thin);
 }
 .h3-test-record {
   margin-top: 50px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
 }
 .test-record-table,
 td {
   padding: 10px;
   border: var(--border-thin);
+  min-width: 200px;
 }
 .test-record-table th {
   width: 33%;
+}
+.table320 {
+  max-width: 100%;
+  overflow-x: auto;
+  border: var(--border-thin);
 }
 
 @media (min-width: 48rem) {
