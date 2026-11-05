@@ -7,9 +7,11 @@
   --size-h2: 2rem;
   --size-h3: 1.25rem;
   --line-height-body: 1.6;
+  --font-weight: 700;
 
   /* COLOR SCHEME */
   --color-bg: #ffffff;
+  --color-bg-light: #f2f2f2;
   --color-surface: #efd6ac;
   --color-text: #000000;
   --color-action: #183a37;
@@ -19,9 +21,11 @@
   --color-muted: #5c6670;
 
   /* SPACING AND SCALING */
-  --space-xs: 0.15rem;
+  --space-xxs: 0.15rem;
+  --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
+  --space-mlg: 1.25rem;
   --space-lg: 1.5rem;
   --space-xl: 2rem;
 
@@ -58,7 +62,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  letter-spacing: var(--space-xs);
+  letter-spacing: var(--space-xxs);
 }
 .page-header {
   padding: clamp(2rem, 6vw, 5rem);
@@ -67,7 +71,7 @@ h4 {
 }
 .eyebrow {
   color: var(--color-accent);
-  font-weight: 700;
+  font-weight: var(--font-weight);
 }
 .lede {
   max-width: var(--measure);
@@ -92,13 +96,13 @@ form {
   gap: var(--space-lg);
 }
 fieldset {
-  padding: var(--space-md);
-  border: 1px solid var(--color-action);
-  border-radius: var(--radius);
+  padding: var(--space-mlg);
+  border: var(--border-thin);
+  border-radius: var(--radius-lg);
 }
 legend,
 label {
-  font-weight: 700;
+  font-weight: var(--font-weight);
 }
 .help {
   margin: 0;
@@ -114,9 +118,9 @@ input:not([type="radio"]):not([type="checkbox"]),
 select,
 textarea {
   width: 100%;
-  padding: 0.75rem;
+  padding: var(--space-md);
   border: 2px solid var(--color-border);
-  border-radius: 0.25rem;
+  border-radius: var(--radius-sm);
 }
 textarea {
   min-height: 8rem;
@@ -124,23 +128,23 @@ textarea {
 }
 .choice {
   display: flex;
-  gap: 0.65rem;
+  gap: var(--space-sm);
   align-items: flex-start;
-  padding: 0.25rem 0;
+  padding: var(--space-xs) 0;
 }
 .choice input {
-  inline-size: 1.25rem;
-  block-size: 1.25rem;
+  inline-size: var(--space-mlg);
+  block-size: var(--space-mlg);
 }
 button {
   justify-self: start;
   min-height: 44px;
-  padding: 0.75rem 1rem;
+  padding: var(--space-sm) var(--space-md);
   background: var(--color-action);
-  color: #fff;
+  color: var(--color-bg);
   border: 2px solid var(--color-action);
-  border-radius: 0.25rem;
-  font-weight: 700;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight);
 }
 :focus-visible {
   outline: 0.2rem solid var(--color-accent);
@@ -164,7 +168,7 @@ button:disabled {
   overflow-wrap: anywhere;
 }
 .matrix-row td {
-  background-color: #f2f2f2;
+  background-color: var(--color-bg-light);
 }
 .NEED-HELP {
   border: 3px solid red;
@@ -174,6 +178,6 @@ button:disabled {
   .paired-fields {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: var(--space-md);
   }
 }

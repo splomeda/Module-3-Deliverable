@@ -46,18 +46,7 @@
               required
             />
           </div>
-          <div class="field">
-            <label for="email">Email address (required)</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              autocomplete="email"
-              maxlength="254"
-              placeholder="name@example.com"
-              required
-            />
-          </div>
+
           <div class="field">
             <label for="address">Street address</label>
             <input id="address" name="address" type="text" maxlength="100" />
@@ -80,6 +69,19 @@
           </div>
         </fieldset>
         <fieldset>
+          <legend>Contact Info</legend>
+          <div class="field">
+            <label for="email">Email address (required)</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
           <div class="field">
             <label for="telephone">Phone number</label>
             <input
@@ -105,6 +107,31 @@
             <label for="workphone">Work</label>
             <input type="radio" id="workphone" name="phone" value="Work" />
           </div>
+        </fieldset>
+        <fieldset>
+          <legend>How may we contact you?</legend>
+          <label class="choice">
+            <input
+              type="checkbox"
+              name="request_type"
+              value="contact-phone"
+            />Call</label
+          >
+          <label class="choice"
+            ><input
+              type="checkbox"
+              name="request_type"
+              value="contact-text"
+            />Text</label
+          >
+          <label class="choice">
+            <input
+              type="checkbox"
+              name="request_type"
+              value="contact-email"
+              checked
+            />Email
+          </label>
         </fieldset>
         <fieldset>
           <div>
@@ -134,31 +161,7 @@
             <input type="radio" id="workedFor2" name="worked" value="no" />
           </div>
         </fieldset>
-        <fieldset>
-          <legend>How may we contact you?</legend>
-          <label class="choice">
-            <input
-              type="checkbox"
-              name="request_type"
-              value="contact-phone"
-            />Call</label
-          >
-          <label class="choice"
-            ><input
-              type="checkbox"
-              name="request_type"
-              value="contact-text"
-            />Text</label
-          >
-          <label class="choice">
-            <input
-              type="checkbox"
-              name="request_type"
-              value="contact-email"
-              checked
-            />Email
-          </label>
-        </fieldset>
+
         <div class="field">
           <label for="details">Cover Letter (optional)</label>
           <p class="help" id="details-help">
