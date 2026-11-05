@@ -1,16 +1,43 @@
 :root {
+  /* FONT SYSTEM */
   --font-body: "Montserrat", sans-serif;
-  --font-display: "Bangers", system-ui;
-  --color-text: #000;
+  --font-display: "Lora", serif;
+  --size-base: 1rem;
+  --size-h1: 2.5rem;
+  --size-h2: 2rem;
+  --size-h3: 1.25rem;
+  --line-height-body: 1.6;
+
+  /* COLOR SCHEME */
+  --color-bg: #ffffff;
   --color-surface: #efd6ac;
+  --color-text: #000000;
   --color-action: #183a37;
   --color-accent: #ee6c4d;
   --color-border: #0d0d0d;
   --color-error: darkred;
   --color-muted: #5c6670;
-  --space-3: 1rem;
-  --radius: 0.5rem;
+
+  /* SPACING AND SCALING */
+  --space-xs: 0.15rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
+  /* SIZING & MEASURE */
   --measure: 68ch;
+  --measure-max-width: 1200px;
+
+  /* BORDER RADIUS */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+
+  /* BORDER & FOCUS RINGS */
+  --border-thin: 1px solid var(--color-border);
+  --border-thick: 2px solid var(--color-border);
+  --focus-ring: 3px solid var(--color-accent);
 }
 *,
 *::before,
@@ -24,19 +51,19 @@ body {
   color: var(--color-text);
   background: var(--color-surface);
   font-family: var(--font-body);
-  line-height: 1.6;
+  line-height: var(--line-height-body);
 }
 h1,
 h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  letter-spacing: 0.15rem;
+  letter-spacing: var(--space-xs);
 }
 .page-header {
   padding: clamp(2rem, 6vw, 5rem);
   background: var(--color-action);
-  color: #fff;
+  color: var(--color-bg);
 }
 .eyebrow {
   color: var(--color-accent);
@@ -44,28 +71,28 @@ h4 {
 }
 .lede {
   max-width: var(--measure);
-  font-size: 1.25rem;
+  font-size: var(--size-h3);
 }
 main {
   max-width: 52rem;
   margin: auto;
-  padding: var(--space-3);
+  padding: var(--size-base);
 }
 section,
 form {
-  margin-block: 2rem;
+  margin-block: var(--space-xl);
 }
 form,
 fieldset,
 .field {
   display: grid;
-  gap: 0.65rem;
+  gap: var(--space-md);
 }
 form {
-  gap: 1.5rem;
+  gap: var(--space-lg);
 }
 fieldset {
-  padding: 1rem;
+  padding: var(--space-md);
   border: 1px solid var(--color-action);
   border-radius: var(--radius);
 }
