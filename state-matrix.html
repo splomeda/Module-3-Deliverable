@@ -66,16 +66,21 @@
         <tr>
           <td>Name</td>
           <td>Focus</td>
-          <td>2px orange border</td>
+          <td>3px orange border</td>
           <td>Screen reader announces the "Name" label.</td>
         </tr>
         <tr>
           <td>Name</td>
           <td>Required</td>
-          <td>Text next to form label that says "Required"</td>
           <td>
-            <code>required</code> attribute signals to assistive tech that field
-            cannot be skipped.
+            Text next to form label that says "Required". Red border with pink
+            background is triggered if nothing entered into field when user
+            attempts to submit form.
+          </td>
+          <td>
+            <code>required</code> attribute indicates field is required and form
+            cannot be submitted until field is filled or error is addressed by
+            user.
           </td>
         </tr>
         <tr>
@@ -94,12 +99,13 @@
           <td>Name</td>
           <td>Invalid</td>
           <td>
-            Orange border with tooltip that reads "Please fill out this field",
+            Red border and pink background with tooltip that reads "Please fill
+            out this field",
             <code>maxlength="100"</code>
           </td>
           <td>
-            Browser natively flags the element as invalid to assistive tech and
-            pauses form submission.
+            Browser flags field as invalid; form cannot be submitted until error
+            is addressed.
           </td>
         </tr>
         <tr>
@@ -117,8 +123,8 @@
         <tr>
           <td>Name</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>N/A</td>
+          <td>N/A</td>
         </tr>
         <!--EMAIL---------------------------------------------------------------->
         <tr class="matrix-row">
@@ -130,16 +136,21 @@
         <tr class="matrix-row">
           <td>Email address</td>
           <td>Focus</td>
-          <td>2px orange border</td>
+          <td>3px orange border</td>
           <td>Screen reader announces the "Email address" label.</td>
         </tr>
         <tr class="matrix-row">
           <td>Email address</td>
           <td>Required</td>
-          <td>Text next to form label that says "Required"</td>
           <td>
-            <code>required</code> attribute signals to assistive tech that field
-            is required.
+            Text next to form label that says "Required". Red border with pink
+            background if nothing entered into field when user attempts to
+            submit form.
+          </td>
+          <td>
+            <code>required</code> attribute indicates field is required and form
+            cannot be submitted until field is filled or error is addressed by
+            user.
           </td>
         </tr>
         <tr class="matrix-row">
@@ -156,14 +167,14 @@
           <td>Email address</td>
           <td>Invalid</td>
           <td>
-            Tooltip that reads "Please include an '@' in the email address"
-            and/or "Please enter a part following '@' [nnn] is incomplete.";
+            Red border with pink background. Tooltip that reads "Please include
+            an '@' in the email address" and/or "Please enter a part following
+            '@' [nnn] is incomplete.";
             <code>maxlength="254"</code>
           </td>
           <td>
-            Per Google Gemini, "the browser flags the element as invalid to
-            assistive tech, natively blocks form submission, and alerts the user
-            to a broken entry structure."
+            Browser flags element as invalid. User cannot submit form until
+            error is addressed as email field is required.
           </td>
         </tr>
         <tr class="matrix-row">
@@ -181,8 +192,14 @@
         <tr class="matrix-row">
           <td>Email address</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>
+            Message that alerts user that email address already exists in system
+            or database.
+          </td>
+          <td>
+            Message that alerts user that email address already exists in system
+            or database.
+          </td>
         </tr>
         <!--STREET ADDRESS---------------------------------------------------------------->
         <tr>
@@ -194,17 +211,14 @@
         <tr>
           <td>Street address</td>
           <td>Focus</td>
-          <td>2px orange border</td>
+          <td>3px orange border</td>
           <td>Screen reader announces "Street address" label.</td>
         </tr>
         <tr>
           <td>Street address</td>
           <td>Required</td>
-          <td>Text next to label that says 'required'.</td>
-          <td>
-            <code>required</code> attribute signals to assistive tech that field
-            is required.
-          </td>
+          <td>Not required.</td>
+          <td>Not required.</td>
         </tr>
         <tr>
           <td>Street address</td>
@@ -219,13 +233,10 @@
           <td>Street address</td>
           <td>Invalid</td>
           <td>
-            Any combination of characters can be entered up to a maximum of 100
-            characters.
+            Field cannot be invalid; any combination of characters can be
+            entered up to a maximum of 100 characters.
           </td>
-          <td>
-            Browser flags the element as invalid to assistive tech and pauses
-            form submission.
-          </td>
+          <td>Field cannot be invalid.</td>
         </tr>
         <tr>
           <td>Street address</td>
@@ -242,8 +253,14 @@
         <tr>
           <td>Street address</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>
+            No error message as street address can be associated with more than
+            one user.
+          </td>
+          <td>
+            No error message as street address can be associated with more than
+            one user.
+          </td>
         </tr>
         <!--CITY---------------------------------------------------------------->
         <tr class="matrix-row">
@@ -255,16 +272,21 @@
         <tr class="matrix-row">
           <td>City</td>
           <td>Focus</td>
-          <td>2px orange border</td>
+          <td>3px orange border</td>
           <td>Screen reader announces the "City" label.</td>
         </tr>
         <tr class="matrix-row">
           <td>City</td>
           <td>Required</td>
-          <td>Tooltip: "Please fill out this field"</td>
           <td>
-            <code>required</code> attribute signals to assistive tech that field
-            is required.
+            Tooltip: "Please fill out this field" Red border with pink
+            background is triggered is user attempts to submit form with the
+            field blank.
+          </td>
+          <td>
+            <code>required</code> attribute indicates field is required and form
+            cannot be submitted until field is filled or error is addressed by
+            user.
           </td>
         </tr>
         <tr class="matrix-row">
@@ -283,13 +305,10 @@
           <td>City</td>
           <td>Invalid</td>
           <td>
-            Any combination of characters can be entered up to a maximum of 100
-            characters.
+            Cannot be invalid; any combination of characters can be entered up
+            to a maximum of 100 characters.
           </td>
-          <td>
-            Browser natively flags the element as invalid to assistive tech and
-            pauses form submission.
-          </td>
+          <td>Cannot be invalid.</td>
         </tr>
         <tr class="matrix-row">
           <td>City</td>
@@ -306,8 +325,12 @@
         <tr class="matrix-row">
           <td>City</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>
+            No error message as city can be associated with multiple users.
+          </td>
+          <td>
+            No error message as city can be associated with multiple users.
+          </td>
         </tr>
         <!--STATE---------------------------------------------------------------->
         <tr>
@@ -319,7 +342,7 @@
         <tr>
           <td>State</td>
           <td>Focus</td>
-          <td>2px orange border</td>
+          <td>3px orange border</td>
           <td>Screen reader announces the "State" label.</td>
         </tr>
         <tr>
@@ -327,10 +350,10 @@
           <td>Required</td>
           <td>
             Dropdown menu with selectable items; tooltip: "Please select an item
-            on this list."
+            on this list." User must make a selection.
           </td>
           <td>
-            Browser block submission if the default value is still selected in
+            Browser blocks submission if the default value is still selected in
             the dropdown menu <code>--Choose your state--</code>
           </td>
         </tr>
@@ -366,8 +389,8 @@
         <tr>
           <td>State</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>No error as state can be associated with multiple users.</td>
+          <td>No error as state can be associated with multiple users.</td>
         </tr>
         <!--PHONE---------------------------------------------------------------->
         <tr class="matrix-row">
@@ -379,7 +402,7 @@
         <tr class="matrix-row">
           <td>Phone</td>
           <td>Focus</td>
-          <td>2px orange border</td>
+          <td>3px orange border</td>
           <td>Screen reader announces the "Phone number" label.</td>
         </tr>
         <tr class="matrix-row">
@@ -395,23 +418,24 @@
           <td>Phone</td>
           <td>Valid</td>
           <td>
-            Black text, <code>maxlength</code> is 12 digits and must match dash
-            pattern.
+            Black text, <code>maxlength</code> is 12 digits with
+            <code>placeholder="###-###-####"</code>.
           </td>
           <td>
-            If the conditions of the pattern attribute are satisfied the form
-            allows the user to continue, however the field is not required and
-            can be skipped completely.
+            Not required and any combination of numbers can be entered up to 12
+            digits.
           </td>
         </tr>
         <tr class="matrix-row">
           <td>Phone</td>
           <td>Invalid</td>
-          <td>Tooltip: "Please match the requested format."</td>
           <td>
-            Even though phone is not required (it can be skipped completely), if
-            an incorrect format is entered form submission is paused until
-            number matches the <code>pattern</code>.
+            It is not possible for this field to be invalid and any combination
+            of numbers can be entered, up to 12 digits.
+          </td>
+          <td>
+            It is not possible for this field to be invalid and any combination
+            of numbers can be entered, up to 12 digits.
           </td>
         </tr>
         <tr class="matrix-row">
@@ -429,8 +453,12 @@
         <tr class="matrix-row">
           <td>Phone</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>
+            No error as phone number can be associated with multiple users.
+          </td>
+          <td>
+            No error as phone number can be associated with multiple users.
+          </td>
         </tr>
         <!--APPLIED BEFORE---------------------------------------------------------------->
         <tr>
@@ -442,7 +470,7 @@
         <tr>
           <td>Have you ever applied to this company before?</td>
           <td>Focus</td>
-          <td>2px orange bordered-circle around selection.</td>
+          <td>3px orange bordered-circle around selection.</td>
           <td>Screen reader announces the field's label.</td>
         </tr>
         <tr>
@@ -484,8 +512,8 @@
         <tr>
           <td>Have you ever applied to this company before?</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>N/A</td>
+          <td>N/A</td>
         </tr>
         <!--WORKED BEFORE---------------------------------------------------------------->
         <tr class="matrix-row">
@@ -497,7 +525,7 @@
         <tr class="matrix-row">
           <td>Have you ever worked for this company before?</td>
           <td>Focus</td>
-          <td>2px orange bordered-circle around selection.</td>
+          <td>3px orange bordered-circle around selection.</td>
           <td>Screen reader announces the field's label.</td>
         </tr>
         <tr class="matrix-row">
@@ -539,8 +567,8 @@
         <tr class="matrix-row">
           <td>Have you ever worked for this company before?</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>N/A</td>
+          <td>N/A</td>
         </tr>
         <!--CONTACT PREFERENCE---------------------------------------------------------------->
         <tr>
@@ -552,7 +580,7 @@
         <tr>
           <td>How may we contact you?</td>
           <td>Focus</td>
-          <td>2px orange border around checkbox.</td>
+          <td>3px orange border around checkbox.</td>
           <td>Screen reader announces the field's label.</td>
         </tr>
         <tr>
@@ -596,8 +624,8 @@
         <tr>
           <td>How may we contact you?</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>N/A</td>
+          <td>N/A</td>
         </tr>
         <!--COVER LETTER---------------------------------------------------------------->
         <tr class="matrix-row">
@@ -609,7 +637,7 @@
         <tr class="matrix-row">
           <td>Cover Letter</td>
           <td>Focus</td>
-          <td>2px orange border around checkbox.</td>
+          <td>3px orange border around checkbox.</td>
           <td>Screen reader announces the field's label.</td>
         </tr>
         <tr class="matrix-row">
@@ -656,8 +684,8 @@
         <tr class="matrix-row">
           <td>Cover Letter</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>N/A</td>
+          <td>N/A</td>
         </tr>
         <!--SIGNATURE---------------------------------------------------------------->
         <tr>
@@ -669,17 +697,22 @@
         <tr>
           <td>Full Name (Signature)</td>
           <td>Focus</td>
-          <td>2px orange border.</td>
+          <td>3px orange border.</td>
           <td>Screen reader announces the field's label.</td>
         </tr>
         <tr>
           <td>Full Name (Signature)</td>
           <td>Required</td>
-          <td>Text next to form label that says "Required".</td>
+          <td>
+            Text next to form label that says "Required". Red border with pink
+            background is triggered if user attempts to submit form with a blank
+            field.
+          </td>
           <td>
             Orange border with tooltip that reads "Please fill out this field",
             <code>maxlength="100"</code>. <code>required</code> attribute
-            signals to assistive tech that field cannot be skipped.
+            indicates field is required and form cannot be submitted until field
+            is filled or error is addressed by user.
           </td>
         </tr>
         <tr>
@@ -695,14 +728,12 @@
           <td>Full Name (Signature)</td>
           <td>Invalid</td>
           <td>
-            It is not possible for this section to be invalid and an invalid
-            state cannot be triggered by the user and it only needs one
-            alphanumeric character or digit to be considered valid.
+            Field can only be invalid if left blank and no data entered; it only
+            needs one alphanumeric character or digit to be considered valid. If
+            invalid, a red border with pink background is triggered.
           </td>
           <td>
-            It is not possible for this section to be invalid and an invalid
-            state cannot be triggered by the user and it only needs one
-            alphanumeric character or digit to be considered valid.
+            Screen reader announces error to user and form submission is paused.
           </td>
         </tr>
         <tr>
@@ -720,8 +751,8 @@
         <tr>
           <td>Full Name (Signature)</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>N/A</td>
+          <td>N/A</td>
         </tr>
         <!--DATE---------------------------------------------------------------->
         <tr class="matrix-row">
@@ -733,7 +764,7 @@
         <tr class="matrix-row">
           <td>Date</td>
           <td>Focus</td>
-          <td>2px orange border.</td>
+          <td>3px orange border.</td>
           <td>Screen reader announces the field's label.</td>
         </tr>
         <tr class="matrix-row">
@@ -742,6 +773,7 @@
           <td>
             Date must be selected or entered in the
             <code>MM/DD/YYYY</code> format and browser blocks submission if left
+            empty; red border with pink background is triggered if field is left
             empty.
           </td>
           <td>Tooltip reads: "Please fill out this field."</td>
@@ -751,18 +783,25 @@
           <td>Valid</td>
           <td>
             Date field accepts 8 digits not including '/'.<br />
-            <code>max="9999-12-31"</code>
+            <code>max="2026-12-31"</code>
           </td>
           <td>Screen reader announces field label.</td>
         </tr>
         <tr class="matrix-row">
           <td>Date</td>
           <td>Invalid</td>
-          <td>It is not possible for this section to be invalid.</td>
+          <td>
+            If less than 8 numeric digits is entered a red border with pink
+            background is triggered and tooltip displays "Please enter a valid
+            value. The field is incomplete or has an invalid date." Date is only
+            valid if between 01-01-2026 and 12-31-2026.
+          </td>
           <td>
             As long as the 8 digits are entered, date cannot be invalid. If less
             than 8 digits, a tooltip displays "Please enter a valid value.The
-            field is incomplete or has an invalid date."
+            field is incomplete or has an invalid date." Screen reader will
+            announce the tooltip on error. Date is only valid if between
+            01-01-2026 and 12-31-2026.
           </td>
         </tr>
         <tr class="matrix-row">
@@ -780,8 +819,8 @@
         <tr class="matrix-row">
           <td>Date</td>
           <td>Server-returned error</td>
-          <td class="NEED-HELP">?</td>
-          <td class="NEED-HELP">?</td>
+          <td>No error as form cannot be submitted with an invalid date.</td>
+          <td>No error as form cannot be submitted with an invalid date.</td>
         </tr>
       </tbody>
     </table>

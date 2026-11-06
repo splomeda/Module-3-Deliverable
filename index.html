@@ -92,20 +92,28 @@
               placeholder="###-###-####"
             />
           </div>
-          <div class="phone-type">
-            <label for="homephone">Home</label>
-            <input
-              type="radio"
-              id="homephone"
-              name="phone"
-              value="Home"
-              checked
-            />
-            <label for="mobilephone">Mobile</label>
-            <input type="radio" id="mobilephone" name="phone" value="Mobile" />
-            <label for="workphone">Work</label>
-            <input type="radio" id="workphone" name="phone" value="Work" />
-          </div>
+          <fieldset>
+            <legend>Phone Type</legend>
+            <div class="phone-type">
+              <label for="homephone">Home</label>
+              <input
+                type="radio"
+                id="homephone"
+                name="phone"
+                value="Home"
+                checked
+              />
+              <label for="mobilephone">Mobile</label>
+              <input
+                type="radio"
+                id="mobilephone"
+                name="phone"
+                value="Mobile"
+              />
+              <label for="workphone">Work</label>
+              <input type="radio" id="workphone" name="phone" value="Work" />
+            </div>
+          </fieldset>
         </fieldset>
         <fieldset>
           <legend>How may we contact you?</legend>
@@ -133,6 +141,7 @@
           </label>
         </fieldset>
         <fieldset>
+          <legend>Employment History</legend>
           <div>
             <p>Have you ever applied to this company before?</p>
             <label for="appliedFor1">Yes</label>
@@ -259,6 +268,19 @@
             >
             <input
               id="email-required"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+          <h2 class="h2-error-section">Invalid State</h2>
+          <div>
+            <label for="email-required">Email address (required)</label>
+            <input
+              id="email-required"
               class="required-state"
               name="email"
               type="email"
@@ -268,6 +290,10 @@
               required
             />
           </div>
+          <p class="invalid-text">
+            Please include an '@' in the email address. [value] is missing an
+            '@'.
+          </p>
           <h2 class="h2-error-section">Valid State</h2>
           <div>
             <label for="email-valid">Email address</label>
@@ -281,6 +307,7 @@
               placeholder="name@example.com"
             />
           </div>
+          <p class="valid-state-checkmark">✔</p>
           <h2 class="h2-error-section">Disabled State</h2>
           <div>
             <label for="email-disabled">Email address</label>
@@ -307,11 +334,7 @@
               placeholder="name@example.com"
               required
             />
-            <p>
-              <span style="color: red"
-                >Please enter a valid email address.</span
-              >
-            </p>
+            <p class="invalid-text">Please enter a valid email address.</p>
           </div>
           <h2 class="h2-error-section">Button Active</h2>
           <button type="button">Submit</button>

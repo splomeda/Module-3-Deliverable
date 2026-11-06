@@ -201,6 +201,22 @@ button:disabled {
 .valid-state {
   border: 3px solid var(--color-valid) !important;
 }
+.valid-state-checkmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--color-valid) !important;
+  width: var(--space-lg);
+  height: var(--space-lg);
+  border-radius: 20px;
+  margin-top: 2px;
+  margin-left: 2px;
+  color: var(--color-bg);
+  background-color: var(--color-valid);
+}
+.invalid-text {
+  color: var(--color-error);
+}
 .h2-error-section {
   margin-top: var(--space-mlg);
 }
@@ -208,6 +224,14 @@ input:user-invalid {
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid */
   border: 3px solid var(--color-error) !important;
   background-color: var(--color-error-bg);
+}
+input:user-valid {
+  border: 3px solid var(--color-valid) !important;
+}
+input:disabled {
+  border: 2px solid var(--color-disabled) !important;
+  background-color: var(--color-border-light);
+  cursor: not-allowed;
 }
 .test-record-wrap {
   display: flex;
