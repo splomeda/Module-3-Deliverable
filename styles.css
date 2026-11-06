@@ -17,7 +17,11 @@
   --color-action: #183a37;
   --color-accent: #ee6c4d;
   --color-border: #0d0d0d;
-  --color-error: darkred;
+  --color-border-light: #ccc;
+  --color-error: red;
+  --color-error-bg: #ffdddd;
+  --color-valid: green;
+  --color-disabled: gray;
   --color-muted: #5c6670;
 
   /* SPACING AND SCALING */
@@ -40,6 +44,7 @@
 
   /* BORDER & FOCUS RINGS */
   --border-thin: 1px solid var(--color-border);
+  --border-thin-light: 1px solid var(--color-border-light);
   --border-thick: 2px solid var(--color-border);
   --focus-ring: 3px solid var(--color-accent);
 }
@@ -171,8 +176,8 @@ button:disabled {
   background-color: var(--color-bg-light);
 }
 .NEED-HELP {
-  border: 3px solid red;
-  background-color: rgb(249, 191, 191) !important;
+  border: 3px solid var(--color-error);
+  background-color: var(--color-error-bg) !important;
 }
 /*--ERROR SYSTEM--*/
 .error-system-wrap {
@@ -191,18 +196,18 @@ button:disabled {
   outline-offset: 3px;
 }
 .required-state {
-  border: 3px solid red !important;
+  border: 3px solid var(--color-error) !important;
 }
 .valid-state {
-  border: 3px solid green !important;
+  border: 3px solid var(--color-valid) !important;
 }
 .h2-error-section {
-  margin-top: 25px;
+  margin-top: var(--space-mlg);
 }
 input:user-invalid {
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid */
-  border: 3px solid red !important;
-  background-color: #ffd2d2;
+  border: 3px solid var(--color-error) !important;
+  background-color: var(--color-error-bg);
 }
 .test-record-wrap {
   display: flex;
@@ -220,13 +225,13 @@ input:user-invalid {
   border: var(--border-thin);
 }
 .h3-test-record {
-  margin-top: 50px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xs);
+  border-bottom: var(--border-thin-light);
 }
 .test-record-table,
 td {
-  padding: 10px;
+  padding: var(--space-xs);
   border: var(--border-thin);
 }
 .test-record-table th {
