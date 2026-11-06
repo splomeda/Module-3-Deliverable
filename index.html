@@ -88,7 +88,6 @@
               id="telephone"
               name="telephone"
               type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               maxlength="12"
               placeholder="###-###-####"
             />
@@ -185,12 +184,13 @@
             required
           />
           <label for="signedDate">Date</label>
+          <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/date#try_it -->
           <input
             type="date"
             name="date"
             id="signedDate"
             min="2026-01-01"
-            max="2099-12-31"
+            max="2026-12-31"
             required
           />
         </div>

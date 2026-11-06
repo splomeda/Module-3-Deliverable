@@ -165,7 +165,7 @@ button:disabled {
 }
 .fictional-data {
   width: 100%;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word; /* https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Text/Wrapping_breaking_text#breaking_long_words */
 }
 .matrix-row td {
   background-color: var(--color-bg-light);
@@ -199,39 +199,11 @@ button:disabled {
 .h2-error-section {
   margin-top: 25px;
 }
-/*--Code supplied by Google Gemini------*/
-input[type="email"]:user-invalid {
-  border: 3px solid red;
-  background-color: #fef2f2;
+input:user-invalid {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid */
+  border: 3px solid red !important;
+  background-color: #ffd2d2;
 }
-input[type="email"]:disabled {
-  border: 3px solid gray;
-}
-/*--End imported code-------------------*/
-input[type="text"]:user-invalid {
-  border: 3px solid red;
-  background-color: #fef2f2;
-}
-input[type="date"]:user-invalid {
-  border: 3px solid red;
-  background-color: #fef2f2;
-}
-input[type="text"]:disabled {
-  border: 3px solid gray;
-}
-input[type="date"]:disabled {
-  border: 3px solid gray;
-}
-input[type="email"]:user-valid {
-  border: 3px solid green;
-}
-input[type="text"]:user-valid {
-  border: 3px solid green;
-}
-input[type="date"]:user-valid {
-  border: 3px solid green;
-}
-
 .test-record-wrap {
   display: flex;
   flex-direction: column;
