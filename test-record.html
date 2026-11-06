@@ -5,30 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>splomedahl | Test Record</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.5;
-        max-width: 80rem;
-        margin: auto;
-        padding: 1rem;
-        color: #191919;
-      }
-      header {
-        width: 100%;
-        padding: clamp(2rem, 6vw, 5rem);
-        background: var(--color-action);
-        color: var(--color-bg);
-      }
-    </style>
-  </head>
   </head>
   <body>
-    <header>
-      <p class="eyebrow">GIT 337 / ASU</p>
-      <h1>F6 · Test Record</h1>
-      <p class="lede">splomedahl</p>
-    </header>
     <main>
       <section>
         <div class="test-record-wrap">
@@ -94,24 +72,44 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>radio group</td>
+                  <td>select</td>
                   <td>Chrome DevTools</td>
-                  <td></td>
+                  <td>
+                    Label for select/dropdown menu shows <code>state</code>.
+                    Values show <code>AZ, CA, NM, OR, TX, WA</code>
+                  </td>
                 </tr>
                 <tr>
                   <td>checkbox</td>
                   <td>Chrome DevTools</td>
-                  <td></td>
+                  <td>
+                    Legend for checkbox shows
+                    <code>How may we contact you?</code>. Labels show as
+                    <code>choice</code>. Values show
+                    <code>contact-phone, contact-text, contact-email</code>.
+                  </td>
                 </tr>
                 <tr>
-                  <td>select</td>
+                  <td>radio group</td>
                   <td>Chrome DevTools</td>
-                  <td></td>
+                  <td>
+                    Labels show <code>Home, Mobile, Work</code> with values of
+                    <code>Home, Mobile, Work</code>. Applied for radio says
+                    <code>Have you ever applied to this company before?</code>
+                    with <code>Yes/No</code> for label and value. Worked for
+                    radio says
+                    <code>Have you ever worked for this company before?</code>
+                    with label and value showing <code>Yes/No</code>.
+                  </td>
                 </tr>
                 <tr>
                   <td>text area</td>
                   <td>Chrome DevTools</td>
-                  <td></td>
+                  <td>
+                    Label for textarea is <code>Cover Letter (optional)</code>.
+                    <code>aria-describedby</code> shows
+                    <code>cover-letter</code>
+                  </td>
                 </tr>
               </tbody>
             </table>
