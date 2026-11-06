@@ -175,10 +175,7 @@ button:disabled {
 .matrix-row td {
   background-color: var(--color-bg-light);
 }
-.NEED-HELP {
-  border: 3px solid var(--color-error);
-  background-color: var(--color-error-bg) !important;
-}
+
 /*--ERROR SYSTEM--*/
 .error-system-wrap {
   display: flex;
@@ -265,6 +262,10 @@ td {
   max-width: 100%;
   overflow-x: auto;
   border: var(--border-thin);
+}
+.table-collapse {
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 @media (min-width: 48rem) {

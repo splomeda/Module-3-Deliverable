@@ -40,157 +40,159 @@
       }
     </style>
   </head>
-  <header>
-    <p class="eyebrow">GIT 337 / ASU</p>
-    <h1>F2 · Field Inventory</h1>
-    <p class="lede">splomedahl</p>
-  </header>
   <body>
-    <table>
-      <thead>
-        <tr>
-          <th>Visible label / question</th>
-          <th>Why necessary now?</th>
-          <th>Required?</th>
-          <th>Native control/type</th>
-          <th>Submitted name/value</th>
-          <th>Autocomplete/inputmode</th>
-          <th>Constraint/instruction</th>
-          <th>Sensitivity and minimization decision</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Example only</td>
-          <td>Replace</td>
-          <td>Yes/No</td>
-          <td>Replace</td>
-          <td>Replace</td>
-          <td>Replace or N/A</td>
-          <td>Replace or none</td>
-          <td>Replace</td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td>Employment application</td>
-          <td>Yes</td>
-          <td>text</td>
-          <td>name</td>
-          <td>N/A</td>
-          <td>none</td>
-          <td>Medium sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td>Bare minimum contact info</td>
-          <td>Yes</td>
-          <td>email</td>
-          <td>email</td>
-          <td>autocomplete</td>
-          <td>none</td>
-          <td>Medium sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>Street address</td>
-          <td>Employment correspondence</td>
-          <td>No</td>
-          <td>text</td>
-          <td>address</td>
-          <td>N/A</td>
-          <td>none</td>
-          <td>Medium sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>City</td>
-          <td>Store location</td>
-          <td>Yes</td>
-          <td>text</td>
-          <td>city</td>
-          <td>N/A</td>
-          <td>none</td>
-          <td>Medium sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>State</td>
-          <td>Store location</td>
-          <td>Yes</td>
-          <td>select</td>
-          <td>AZ, CA, NM, OR, TX, WA</td>
-          <td>N/A</td>
-          <td>none</td>
-          <td>Medium sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>Phone number</td>
-          <td>Employee contact info</td>
-          <td>No</td>
-          <td>text</td>
-          <td>telephone</td>
-          <td>N/A</td>
-          <td>none</td>
-          <td>Medium sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>Have you ever applied to this company before?</td>
-          <td>Internal office use</td>
-          <td>Yes</td>
-          <td>radio</td>
-          <td>yes, no</td>
-          <td>N/A</td>
-          <td>none</td>
-          <td>Low sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>Have you ever worked for this company before?</td>
-          <td>Internal office use</td>
-          <td>Yes</td>
-          <td>radio</td>
-          <td>yes, no</td>
-          <td>N/A</td>
-          <td>none</td>
-          <td>Low sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>How may we contact you?</td>
-          <td>Employee communication</td>
-          <td>No</td>
-          <td>checkbox</td>
-          <td>call, text, email</td>
-          <td>N/A</td>
-          <td>none</td>
-          <td>Low sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>Cover letter (optional)</td>
-          <td>Employee application data</td>
-          <td>No</td>
-          <td>textarea</td>
-          <td>text</td>
-          <td>N/A</td>
-          <td>none</td>
-          <td>Medium sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>Full name</td>
-          <td>Employee application data, signature</td>
-          <td>Yes</td>
-          <td>text</td>
-          <td>fullname</td>
-          <td>N/A</td>
-          <td>none</td>
-          <td>High sensitivity, retain</td>
-        </tr>
-        <tr>
-          <td>Date</td>
-          <td>Employee application data, signature</td>
-          <td>Yes</td>
-          <td>date</td>
-          <td>date</td>
-          <td>N/A</td>
-          <td>mm/dd/yyyy</td>
-          <td>Low sensitivity, retain</td>
-        </tr>
-      </tbody>
-    </table>
+    <header>
+      <p class="eyebrow">GIT 337 / ASU</p>
+      <h1>F2 · Field Inventory</h1>
+      <p class="lede">splomedahl</p>
+    </header>
+    <div class="table-collapse">
+      <table>
+        <thead>
+          <tr>
+            <th>Visible label / question</th>
+            <th>Why necessary now?</th>
+            <th>Required?</th>
+            <th>Native control/type</th>
+            <th>Submitted name/value</th>
+            <th>Autocomplete/inputmode</th>
+            <th>Constraint/instruction</th>
+            <th>Sensitivity and minimization decision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Example only</td>
+            <td>Replace</td>
+            <td>Yes/No</td>
+            <td>Replace</td>
+            <td>Replace</td>
+            <td>Replace or N/A</td>
+            <td>Replace or none</td>
+            <td>Replace</td>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td>Employment application</td>
+            <td>Yes</td>
+            <td>text</td>
+            <td>name</td>
+            <td>N/A</td>
+            <td>none</td>
+            <td>Medium sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>Bare minimum contact info</td>
+            <td>Yes</td>
+            <td>email</td>
+            <td>email</td>
+            <td>autocomplete</td>
+            <td>none</td>
+            <td>Medium sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>Street address</td>
+            <td>Employment correspondence</td>
+            <td>No</td>
+            <td>text</td>
+            <td>address</td>
+            <td>N/A</td>
+            <td>none</td>
+            <td>Medium sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td>Store location</td>
+            <td>Yes</td>
+            <td>text</td>
+            <td>city</td>
+            <td>N/A</td>
+            <td>none</td>
+            <td>Medium sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>State</td>
+            <td>Store location</td>
+            <td>Yes</td>
+            <td>select</td>
+            <td>AZ, CA, NM, OR, TX, WA</td>
+            <td>N/A</td>
+            <td>none</td>
+            <td>Medium sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>Phone number</td>
+            <td>Employee contact info</td>
+            <td>No</td>
+            <td>text</td>
+            <td>telephone</td>
+            <td>N/A</td>
+            <td>none</td>
+            <td>Medium sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>Have you ever applied to this company before?</td>
+            <td>Internal office use</td>
+            <td>Yes</td>
+            <td>radio</td>
+            <td>yes, no</td>
+            <td>N/A</td>
+            <td>none</td>
+            <td>Low sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>Have you ever worked for this company before?</td>
+            <td>Internal office use</td>
+            <td>Yes</td>
+            <td>radio</td>
+            <td>yes, no</td>
+            <td>N/A</td>
+            <td>none</td>
+            <td>Low sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>How may we contact you?</td>
+            <td>Employee communication</td>
+            <td>No</td>
+            <td>checkbox</td>
+            <td>call, text, email</td>
+            <td>N/A</td>
+            <td>none</td>
+            <td>Low sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>Cover letter (optional)</td>
+            <td>Employee application data</td>
+            <td>No</td>
+            <td>textarea</td>
+            <td>text</td>
+            <td>N/A</td>
+            <td>none</td>
+            <td>Medium sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>Full name</td>
+            <td>Employee application data, signature</td>
+            <td>Yes</td>
+            <td>text</td>
+            <td>fullname</td>
+            <td>N/A</td>
+            <td>none</td>
+            <td>High sensitivity, retain</td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td>Employee application data, signature</td>
+            <td>Yes</td>
+            <td>date</td>
+            <td>date</td>
+            <td>N/A</td>
+            <td>mm/dd/yyyy</td>
+            <td>Low sensitivity, retain</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
