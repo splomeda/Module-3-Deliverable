@@ -21,11 +21,12 @@
         Superstore. Please fill out all required fields below. Total time to
         complete is usually 20 minutes. After submission, if we feel you are a
         good fit, someone from the HR department will contact you.
+        <a href="privacy-statement.html" target="_blank">Privacy Statement</a>
       </p>
     </header>
     <main>
       <section id="expectations">
-        <h2>Application for Employment</h2>
+        <h2>F1 &bull; Application for Employment</h2>
         <p>
           <em>PRE-EMPLOYMENT QUESTIONNAIRE</em><br />
           <em>EQUAL OPPORTUNITY EMPLOYER</em>
@@ -33,7 +34,7 @@
       </section>
       <form action="" method="get">
         <fieldset>
-          <legend>Personal information</legend>
+          <legend>F3 &bull; Personal information</legend>
 
           <div class="field">
             <label for="name">Name (required)</label>
@@ -69,7 +70,7 @@
           </div>
         </fieldset>
         <fieldset>
-          <legend>Contact Info</legend>
+          <legend>F3 &bull; Contact Info</legend>
           <div class="field">
             <label for="email">Email address (required)</label>
             <input
@@ -116,7 +117,7 @@
           </fieldset>
         </fieldset>
         <fieldset>
-          <legend>How may we contact you?</legend>
+          <legend>F3 &bull; How may we contact you?</legend>
           <label class="choice">
             <input
               type="checkbox"
@@ -141,7 +142,7 @@
           </label>
         </fieldset>
         <fieldset>
-          <legend>Employment History</legend>
+          <legend>F3 &bull; Employment History</legend>
           <div>
             <p>Have you ever applied to this company before?</p>
             <label for="appliedFor1">Yes</label>
@@ -171,7 +172,7 @@
         </fieldset>
 
         <div class="field">
-          <label for="details">Cover Letter (optional)</label>
+          <label for="details">F3 &bull; Cover Letter (optional)</label>
           <p class="help" id="cover-letter">
             Enter your cover letter in the box below (max characters 1500).
           </p>
@@ -183,7 +184,7 @@
           ></textarea>
         </div>
         <div class="field">
-          <p>Sign and Date</p>
+          <p><strong>Sign and Date</strong></p>
           <label for="signature">Full Name (required)</label>
           <input
             type="text"
@@ -202,6 +203,17 @@
             max="2026-12-31"
             required
           />
+        </div>
+        <div class="privacy-checkbox">
+          <input
+            type="checkbox"
+            name="privacy"
+            id="terms-privacy"
+            value="agree"
+            required
+          />
+          <label for="terms-privacy">I have read and agree to the</label>
+          <a href="privacy-statement.html" target="_blank">Privacy Statement</a>
         </div>
 
         <button type="submit">Submit</button>
@@ -278,9 +290,9 @@
           </div>
           <h2 class="h2-error-section">Invalid State</h2>
           <div>
-            <label for="email-required">Email address (required)</label>
+            <label for="email-required-error">Email address (required)</label>
             <input
-              id="email-required"
+              id="email-required-error"
               class="required-state"
               name="email"
               type="email"
@@ -334,7 +346,10 @@
               placeholder="name@example.com"
               required
             />
-            <p class="invalid-text">Please enter a valid email address.</p>
+            <p class="invalid-text">
+              The email address you have entered is already associated with
+              another account.
+            </p>
           </div>
           <h2 class="h2-error-section">Button Active</h2>
           <button type="button">Submit</button>
@@ -347,6 +362,7 @@
         <p><a href="field-inventory-template.html">Field Inventory</a></p>
         <p><a href="state-matrix.html">State Matrix</a></p>
         <p><a href="fictional-test-data.html">Fictional Test Data</a></p>
+        <p><a href="privacy-statement.html">Privacy Statement</a></p>
         <p><a href="test-record.html">Test Record</a></p>
         <p><a href="README.md">AI Disclosure</a></p>
         <p>

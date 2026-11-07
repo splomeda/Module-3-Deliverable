@@ -57,7 +57,7 @@
           </tr>
         </thead>
         <tbody>
-          <!--NAME---------------------------------------------------------------->
+          <!--NAME-->
           <tr>
             <td>Name</td>
             <td>Default</td>
@@ -127,7 +127,7 @@
             <td>N/A</td>
             <td>N/A</td>
           </tr>
-          <!--EMAIL---------------------------------------------------------------->
+          <!--EMAIL-->
           <tr class="matrix-row">
             <td>Email address</td>
             <td>Default</td>
@@ -204,7 +204,7 @@
               system or database.
             </td>
           </tr>
-          <!--STREET ADDRESS---------------------------------------------------------------->
+          <!--STREET ADDRESS-->
           <tr>
             <td>Street address</td>
             <td>Default</td>
@@ -265,7 +265,7 @@
               than one user.
             </td>
           </tr>
-          <!--CITY---------------------------------------------------------------->
+          <!--CITY-->
           <tr class="matrix-row">
             <td>City</td>
             <td>Default</td>
@@ -335,7 +335,7 @@
               No error message as city can be associated with multiple users.
             </td>
           </tr>
-          <!--STATE---------------------------------------------------------------->
+          <!--STATE-->
           <tr>
             <td>State</td>
             <td>Default</td>
@@ -395,7 +395,7 @@
             <td>No error as state can be associated with multiple users.</td>
             <td>No error as state can be associated with multiple users.</td>
           </tr>
-          <!--PHONE---------------------------------------------------------------->
+          <!--PHONE-->
           <tr class="matrix-row">
             <td>Phone</td>
             <td>Default</td>
@@ -463,7 +463,7 @@
               No error as phone number can be associated with multiple users.
             </td>
           </tr>
-          <!--APPLIED BEFORE---------------------------------------------------------------->
+          <!--APPLIED BEFORE-->
           <tr>
             <td>Have you ever applied to this company before?</td>
             <td>Default</td>
@@ -518,7 +518,7 @@
             <td>N/A</td>
             <td>N/A</td>
           </tr>
-          <!--WORKED BEFORE---------------------------------------------------------------->
+          <!--WORKED BEFORE-->
           <tr class="matrix-row">
             <td>Have you ever worked for this company before?</td>
             <td>Default</td>
@@ -573,7 +573,7 @@
             <td>N/A</td>
             <td>N/A</td>
           </tr>
-          <!--CONTACT PREFERENCE---------------------------------------------------------------->
+          <!--CONTACT PREFERENCE-->
           <tr>
             <td>How may we contact you?</td>
             <td>Default</td>
@@ -630,7 +630,7 @@
             <td>N/A</td>
             <td>N/A</td>
           </tr>
-          <!--COVER LETTER---------------------------------------------------------------->
+          <!--COVER LETTER-->
           <tr class="matrix-row">
             <td>Cover Letter</td>
             <td>Default</td>
@@ -690,7 +690,7 @@
             <td>N/A</td>
             <td>N/A</td>
           </tr>
-          <!--SIGNATURE---------------------------------------------------------------->
+          <!--SIGNATURE-->
           <tr>
             <td>Full Name (Signature)</td>
             <td>Default</td>
@@ -759,7 +759,7 @@
             <td>N/A</td>
             <td>N/A</td>
           </tr>
-          <!--DATE---------------------------------------------------------------->
+          <!--DATE-->
           <tr class="matrix-row">
             <td>Date</td>
             <td>Default</td>
@@ -826,6 +826,67 @@
             <td>Server-returned error</td>
             <td>No error as form cannot be submitted with an invalid date.</td>
             <td>No error as form cannot be submitted with an invalid date.</td>
+          </tr>
+          <!--AGREE & SUBMIT-->
+          <tr>
+            <td>Agree and submit; privacy statement</td>
+            <td>Default</td>
+            <td>Black border</td>
+            <td>input type <code>checkbox</code></td>
+          </tr>
+          <tr>
+            <td>Agree and submit; privacy statement</td>
+            <td>Focus</td>
+            <td>3px orange border.</td>
+            <td>Screen reader announces the field's label.</td>
+          </tr>
+          <tr>
+            <td>Agree and submit; privacy statement</td>
+            <td>Required</td>
+            <td>
+              User must agree to the privacy policy and tick the checkbox to
+              proceed with submitting the application.
+            </td>
+            <td>
+              Tooltip reads: "Please check this box if you want to proceed."
+            </td>
+          </tr>
+          <tr>
+            <td>Agree and submit; privacy statement</td>
+            <td>Valid</td>
+            <td>Blue box with white checkmark.</td>
+            <td>Screen reader announces field label.</td>
+          </tr>
+          <tr>
+            <td>Agree and submit; privacy statement</td>
+            <td>Invalid</td>
+            <td>
+              Field is invalid if you user doesn't tick the checkbox. And a
+              tooltip displays: "Please check this box if you want to proceed."
+            </td>
+            <td>
+              Screen reader announces tooltip: "Please check this box if you
+              want to proceed." Form submission is paused and user cannot
+              continue until they tick the checkbox.
+            </td>
+          </tr>
+          <tr>
+            <td>Agree and submit; privacy statement</td>
+            <td>Disabled</td>
+            <td>
+              Adding the <code>disabled</code> attribute makes the checkbox
+              grayed-out and unselectable.
+            </td>
+            <td>
+              The <code>disabled</code> attribute completely removes the privacy
+              checkbox from the keyboard tab sequence.
+            </td>
+          </tr>
+          <tr>
+            <td>Agree and submit; privacy statement</td>
+            <td>Server-returned error</td>
+            <td>N/A</td>
+            <td>N/A</td>
           </tr>
         </tbody>
       </table>

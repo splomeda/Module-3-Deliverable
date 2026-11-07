@@ -82,6 +82,12 @@ h4 {
   max-width: var(--measure);
   font-size: var(--size-h3);
 }
+.lede a {
+  color: var(--color-bg);
+}
+.lede a:hover {
+  color: var(--color-accent);
+}
 main {
   max-width: 52rem;
   margin: auto;
@@ -266,6 +272,16 @@ td {
 .table-collapse {
   max-width: 100%;
   overflow-x: auto;
+}
+.privacy li {
+  margin-left: 30px;
+}
+.privacy h3 {
+  margin-top: 20px;
+}
+.privacy-checkbox {
+  display: flex;
+  gap: 10px;
 }
 
 @media (min-width: 48rem) {
